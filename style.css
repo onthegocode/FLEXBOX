@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 
+Green: #67b26f
+Blue: #4ca2cd
+Mid: #5aaa9d
+*/
+body {
+  color: #444;
+  font-family: Roboto;
+  padding: 50px;
+  background: linear-gradient(to bottom right, #67b26f, #4ca2cd);
+  height: 100vh;
+  display: flex;
+  align-items: center; /*CROSS AXIS / Y AXIS*/
+  justify-content: center; /*MAIN AXIS / x AXIS*/
+}
+.pizza {
+  display: flex;
+  max-width: 1200px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 30px 80px 10px rgba(0, 0, 0, 0.2);
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+  transition: all ease 500ms;
+}
+a:hover,
+:active {
+  transform: scale(1.1);
+}
+.pizza__hero {
+  flex: 0 0 45%;
+}
+.pizza__img {
+  width: 100%;
+  display: block;
+}
+
+.pizza__content {
+  flex: 1;
+  background: white;
+  text-decoration: none;
+}
+.pizza__price {
+  flex: 0 1 50px;
+  background: linear-gradient(to bottom, #67b26f, #4ca2cd);
+  writing-mode: vertical-rl;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
